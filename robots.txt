@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://ix.puzolana.cl/sitemap.xml
