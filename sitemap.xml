@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://ix.puzolana.cl/</loc>
-    <lastmod>2025-11-06</lastmod>
-  </url>
+  <url><loc>https://ix.puzolana.cl/</loc></url>
+  <url><loc>https://ix.puzolana.cl/resinas/</loc></url>
+  <url><loc>https://ix.puzolana.cl/resinas/sac-8.html</loc></url>
+  <url><loc>https://ix.puzolana.cl/resinas/sba-i.html</loc></url>
+  <url><loc>https://ix.puzolana.cl/resinas/lecho-mixto.html</loc></url>
 </urlset>
