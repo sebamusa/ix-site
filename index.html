@@ -160,9 +160,8 @@
           <textarea name="message" class="input" rows="3"></textarea>
 
           <div class="row" style="margin-top:8px">
-            <button class="btn" type="submit">Cotizar en 2 h</button>
-            <a class="btn secondary" href="tel:+56992367449">Llamar</a>
-          </div>
+  <button id="btnSubmit" class="btn" type="submit">Cotizar en 2 h</button>
+</div>
           <p class="small">Si no recibes respuesta, escríbenos a <a href="mailto:contacto@puzolana.cl">contacto@puzolana.cl</a>.</p>
         </form>
       </div>
@@ -193,6 +192,7 @@
   </main>
 
   <!-- Captura UTMs -->
+  <!-- Captura UTMs -->
   <script>
     (function(){
       const p=new URLSearchParams(location.search);
@@ -202,5 +202,25 @@
       });
     })();
   </script>
+
+  <!-- UX: feedback al enviar -->
+  <script>
+    (function(){
+      const form = document.querySelector('form');
+      const btn  = document.getElementById('btnSubmit');
+
+      form.addEventListener('submit', function(){
+        if (!btn) return;
+        btn.disabled = true;
+        btn.textContent = 'Enviando...';
+        btn.style.opacity = '0.7';
+      });
+
+      // (opcional) forzar número en Volumen
+      const vol = form.querySelector('input[name="vol"]');
+      if (vol) { vol.type = 'number'; vol.min = '200'; }
+    })();
+  </script>
 </body>
+</html>
 </html>
